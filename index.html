@@ -15,7 +15,7 @@
     <div class="container-fluid body-container p-5">
         <div class="container-fluid form-body">
             <div class="row">
-                <div class="col form-sub me-3 rounded-2">
+                <div class="col form-sub me-3">
                     <h3 class="dm-sans-700 form-sub-h3 p-3">Basic Details</h3>
                     <div class="image-input-field d-flex justify-content-center pt-4 pb-4">
                         <label for="image-input" class="input-field">
@@ -27,19 +27,47 @@
                         </label>
                         <input type="file" id="image-input" class="d-none">
                     </div>
-                    <div class="left-first-holder-div">
-                        <span class="d-inline-block mt-3">Salutation</span>
-                        <span class="red-star"> * </span>
-                        <select class="form-select salutation w-25" aria-label="Default select example" required>
-                            <option selected>Select</option>
-                            <option value="1">Mr.</option>
-                            <option value="2">Mrs.</option>
-                            <option value="3">Ms.</option>
-                            <option value="4">Dr.</option>
-                        </select>
+                    <div class="container salutaion-and-name mt-3">
+                        <div class="row">
+                            <div class="col-3 col-bg-1">
+                                <label for="" class="form-label">Salutation</label>
+                                <span class="red-star"> * </span>
+                                <select class="form-select salutation" aria-label="Default select example" required>
+                                    <option selected>Select</option>
+                                    <option value="1">Mr.</option>
+                                    <option value="2">Mrs.</option>
+                                    <option value="3">Ms.</option>
+                                    <option value="4">Dr.</option>
+                                </select>
+                            </div>
+                            <div class="col col-bg-1">
+                                <label for="" class="form-label">First Name</label>
+                                <span class="red-star"> * </span>
+                                <input class="form-control" type="text" placeholder="john">
+                            </div>
+                            <div class="col col-bg-1">
+                                <label for="" class="form-label">Last Name</label>
+                                <span class="red-star"> * </span>
+                                <input class="form-control" type="text" placeholder="doe">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container mt-3">
+                        <div class="row">
+                            <div class="col">
+                                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                <span class="red-star"> * </span>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                            </div>
+                            <div class="col">
+                                <label for="" class="form-label">Mobile Number</label>
+                                <span class="red-star"> * </span>
+                                <input type="email" class="form-control" id="" placeholder="enter mobile number">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col form-sub rounded-2">
+                <div class="col form-sub">
                     Column
                 </div>
             </div>
