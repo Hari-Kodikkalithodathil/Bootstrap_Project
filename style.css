@@ -66,3 +66,9 @@ html,body{
 .col-bg-1{
     background-color: blue;
 } */
+input[type="radio"]{
+    appearance: radio !important;
+    -webkit-appearance: radio !important;
+    accent-color: var(--selection-blue) !important;
+    background-image: none !important;
+}

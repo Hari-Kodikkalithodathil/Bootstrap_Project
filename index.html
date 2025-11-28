@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="container-fluid body-container p-5">
         <div class="container-fluid form-body">
             <div class="row">
-                <div class="col form-sub me-3">
+                <div class="col form-sub me-3 rounded-4">
                     <h3 class="dm-sans-700 form-sub-h3 p-3">Basic Details</h3>
                     <div class="image-input-field d-flex justify-content-center pt-4 pb-4">
                         <label for="image-input" class="input-field">
@@ -27,7 +27,7 @@
                         </label>
                         <input type="file" id="image-input" class="d-none">
                     </div>
-                    <div class="container salutaion-and-name mt-3">
+                    <div class="container-fluid salutaion-and-name mt-3">
                         <div class="row">
                             <div class="col-3 col-bg-1">
                                 <label for="" class="form-label">Salutation</label>
@@ -52,7 +52,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container mt-3">
+                    <div class="container-fluid mt-3">
                         <div class="row">
                             <div class="col">
                                 <label for="exampleFormControlInput1" class="form-label">Email address</label>
@@ -62,12 +62,48 @@
                             <div class="col">
                                 <label for="" class="form-label">Mobile Number</label>
                                 <span class="red-star"> * </span>
-                                <input type="email" class="form-control" id="" placeholder="enter mobile number">
+                                <input type="number" class="form-control" id="" placeholder="enter mobile number">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid mt-3">
+                        <div class="row">
+                            <div class="col">
+                                <label for="" class="form-label">Date of Birth</label>
+                                <span class="red-star"> * </span>
+                                <input type="date" class="form-control" id="" placeholder="select date of birth">
+                            </div>
+                            <div class="col">
+                                <label for="" class="form-label">Gender</label>
+                                <span class="red-star"> * </span>
+                                <div class="d-flex">
+                                    <div class="form-check me-3">
+                                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1" checked>
+                                        <label class="form-check-label" for="radioDefault1">
+                                            Male
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2">
+                                        <label class="form-check-label" for="radioDefault2">
+                                            Female
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid mt-3">
+                        <div class="row">
+                            <div class="col">
+                            <label for="" class="form-label">Address</label>
+                                <span class="red-star"> * </span>
+                                <input class="form-control" type="text" placeholder="enter address">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col form-sub">
+                <div class="col form-sub rounded-4">
                     Column
                 </div>
             </div>
