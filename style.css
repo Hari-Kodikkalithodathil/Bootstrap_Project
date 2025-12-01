@@ -6,6 +6,7 @@
     --secondary: rgba(143, 155, 186, 1);
     --broken-border-color: rgba(178, 186, 208, 1);
     --red-star: rgba(255, 24, 24, 1);
+    --warning-box-color: rgba(253, 244, 209, 1);
 }
 html,body{
     margin: 0;
@@ -13,7 +14,6 @@ html,body{
 }
 .body-container{
     background-color: var(--body-color);
-    height: 100vh;
 }
 /* .form-body{
     background-color: aqua;
