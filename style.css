@@ -7,6 +7,7 @@
     --broken-border-color: rgba(178, 186, 208, 1);
     --red-star: rgba(255, 24, 24, 1);
     --warning-box-color: rgba(253, 244, 209, 1);
+    --height-border-color: rgba(182, 187, 199, 1);
 }
 html,body{
     margin: 0;
@@ -71,4 +72,30 @@ input[type="radio"]{
     -webkit-appearance: radio !important;
     accent-color: var(--selection-blue) !important;
     background-image: none !important;
+}
+.warning-box{
+    background-color: var(--warning-box-color);
+    border-radius: 5%;
+}
+.alert-heading{
+    font-size: 16px;
+}
+.alert-text{
+    font-size: 14px;
+}
+.person-height{
+    border: 2px solid var(--height-border-color);
+    padding: 5% 10%;
+    border-radius: 25%;
+}
+.color-selection{
+    height: 70%;
+}
+input[type="checkbox"]{
+    appearance: checkbox !important;
+    -webkit-appearance: checkbox !important;
+    background-image: none !important;
+}
+.accept{
+    font-size: 14px;
 }

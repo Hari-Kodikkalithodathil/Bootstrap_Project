@@ -145,10 +145,124 @@
                 </div>     
                 <div class="col form-sub rounded-4">
                     <h3 class="dm-sans-700 form-sub-h3 p-3">Advanced Details</h3>
-
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col warning-box">
+                                <span class="dm-sans-500 alert-heading">Sample warning messages - alert</span>
+                                <p class="dm-sans-400 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed fermentum felis. Aliquam erat volutpat. Donec faucibus mauris vel nibh sodales feugiat. Donec suscipit felis vitae orci porttitor congue.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container mt-3">
+                        <div class="row">
+                            <div class="col">
+                                <label for="range4" class="form-label">Height</label>
+                                <span class="red-star"> * </span>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <input type="range" class="form-range" min="110" max="200" value="160" id="range4">
+                                        </div>
+                                        <div class="col">
+                                            <output for="range4" id="rangeValue" aria-hidden="true" class="person-height"></output>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                            <label for="range5" class="form-label">Weight</label>
+                                <span class="red-star"> * </span>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <input type="range" class="form-range" min="110" max="200" value="160" id="range5">
+                                        </div>
+                                        <div class="col">
+                                            <output for="range5" id="rangeValue" aria-hidden="true" class="person-height">65</output>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container mt-3">
+                        <div class="row">
+                            <div class="col">
+                                <label for="" class="form-label">Select Color</label>
+                                <span class="red-star"> * </span>
+                                <input type="color" class="form-control color-selection" id="" value="#CB5D9F">
+                            </div>
+                            <div class="col">
+                                <label for="" class="form-label">Choose Templates</label>
+                                <span class="red-star"> * </span>
+                                <div class="d-flex justify-content-between mt-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                        <label class="form-check-label" for="checkDefault">
+                                            Template 1
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
+                                        <label class="form-check-label" for="checkChecked">
+                                            Template 2
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                        <label class="form-check-label" for="checkDefault">
+                                            Template 3
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="container mt-4">
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="exampleFormControlInput1" class="form-label">Qualification</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container mt-4">
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="exampleFormControlTextarea1" class="form-label">About Yourself</label>
+                                        <span class="red-star"> * </span>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container mt-4">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                            <label class="form-check-label" for="checkDefault" class="dm-sans-400 accept">
+                                                I accept the terms and conditions
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        // This is an example script, please modify as needed
+        const rangeInput = document.getElementById('range4');
+        const rangeOutput = document.getElementById('rangeValue');
+
+        // Set initial value
+        rangeOutput.textContent = rangeInput.value;
+
+        rangeInput.addEventListener('input', function() {
+            rangeOutput.textContent = this.value;
+        });
+    </script>
 </body>
 </html>
