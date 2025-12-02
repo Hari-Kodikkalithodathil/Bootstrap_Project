@@ -8,6 +8,7 @@
     --red-star: rgba(255, 24, 24, 1);
     --warning-box-color: rgba(253, 244, 209, 1);
     --height-border-color: rgba(182, 187, 199, 1);
+    --text-color: rgba(43, 54, 116, 1);
 }
 html,body{
     margin: 0;
@@ -58,6 +59,12 @@ html,body{
     color: var(--secondary);
     font-size: 12px;
 }
+.form-text{
+    font-size: 14px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    color: var(--text-color);
+}
 .red-star{
     color: var(--red-star);
 }
@@ -67,6 +74,9 @@ html,body{
 .col-bg-1{
     background-color: blue;
 } */
+ input::placeholder {
+    font-size: 14px;
+}
 input[type="radio"]{
     appearance: radio !important;
     -webkit-appearance: radio !important;
@@ -95,7 +105,13 @@ input[type="checkbox"]{
     appearance: checkbox !important;
     -webkit-appearance: checkbox !important;
     background-image: none !important;
+    accent-color: var(--selection-blue) !important;
 }
 .accept{
     font-size: 14px;
+}
+.save{
+    background-color: var(--selection-blue);
+    color: var(--form-color);
+    font-size: 15px;
 }
